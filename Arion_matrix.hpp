@@ -165,7 +165,7 @@ class Matrix_xy
 
 			if (matrix.size_x != matrix.size_y)
 			{
-				cout << "Íåâîçìîæíî îïðåäåëèòü îïðåäåëèòåëü ó òàêîé ìàòðèöû!" << endl << endl;
+				cout << "Матрица не является квадратной!" << endl << endl;
 
 			}
 			else
