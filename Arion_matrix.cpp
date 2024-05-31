@@ -28,7 +28,7 @@ void SumMatrix(Matrix_xy& matrix_main, Matrix_xy help_matrix)
 
 	if (matrix_main.size_y != help_matrix.size_y || matrix_main.size_x != help_matrix.size_x)
 	{
-		cout << "Ó ìàòðèö ðàçíûé ðàçìåð!" << endl << endl;
+		cout << "Матрицы разных размеров!" << endl << endl;
 		return;
 	}
 
@@ -49,7 +49,7 @@ void MinusMatrix(Matrix_x& matrix_main, Matrix_x help_matrix)
 
 	if (matrix_main.size_x != help_matrix.size_x)
 	{
-		cout << "Ó âåêòîðîâ ðàçíûé ðàçìåð!" << endl << endl;
+		cout << "Невозможно произвести разность данных векторов!" << endl << endl;
 		return;
 	}
 
@@ -65,7 +65,7 @@ void MinusMatrix(Matrix_xy& matrix_main, Matrix_xy help_matrix)
 
 	if (matrix_main.size_y != help_matrix.size_y || matrix_main.size_x != help_matrix.size_x)
 	{
-		cout << "Ó ìàòðèö ðàçíûé ðàçìåð!" << endl << endl;
+		cout << "Невозможно произвести разность данных матриц!" << endl << endl;
 	}
 		
 	for (int i = 0; i < matrix_main.size_y; i++)
@@ -105,11 +105,11 @@ Matrix_xy MultiplicationMatrix(Matrix_x matrix_main, Matrix_x help_matrix)
 
 	if (matrix_main.mode == help_matrix.mode)
 	{
-		cout << "Òàêèå âåêòîðû íå ìîãóò áûòü óìíîæåíû!" << endl << endl;
+		cout << "Такие векторы не могут быть умножены!" << endl << endl;
 	}
 	else if (matrix_main.size_x != help_matrix.size_x)
 	{
-		cout << "Ó âåêòîðâ ðàçíûå ðàçìåðû" << endl << endl;
+		cout << "Такие векторы не могут быть умножены!" << endl << endl;
 	}
 	else if (matrix_main.mode == "column")
 	{
@@ -145,11 +145,11 @@ Matrix_x MultiplicationMatrix(Matrix_x matrix_main, Matrix_xy help_matrix)
 
 	if (matrix_main.size_x != help_matrix.size_x)
 	{
-		cout << "Òàêîé âåêòîð íå ìîæåò áûòü óìíîæåí íà ìàòðèöó!" << endl << endl;
+		cout << "Невозможно умножить такой вектор на матрицу!" << endl << endl;
 	}
 	else if (matrix_main.mode != "column")
 	{
-		cout << "Âåêòîð äîëæåí áûòü òîëüêî âåêîðîì-ñòîëáöîì!" << endl << endl;
+		cout << "Вектор должен быть вектором-столбцом!" << endl << endl;
 	}
 	else
 	{
@@ -171,7 +171,7 @@ Matrix_xy MultiplicationMatrix(Matrix_xy matrix_main, Matrix_xy help_matrix)
 
 	if (matrix_main.size_x != help_matrix.size_y)
 	{
-		cout << "Òàêèå ìàòðèöû íå ìîãóò áûòü óìíîæåíû!" << endl << endl;
+		cout << "Матрицы разных размеров!" << endl << endl;
 	}
 	else if (matrix_main.size_x == help_matrix.size_y)
 	{
@@ -200,7 +200,7 @@ void DivisionMatrix(Matrix_x& matrix, double value)
 	setlocale(LC_ALL, "Russian");
 	if (value == 0)
 	{
-		cout << "Íà íîëü äåëèòü íåëüçÿ!" << endl << endl;
+		cout << "На ноль делить нельзя!" << endl << endl;
 	}
 
 	else
@@ -218,7 +218,7 @@ void DivisionMatrix(Matrix_xy& matrix, double value)
 	
 	if (value == 0)
 	{
-		cout << "Íà íîëü äåëèòü íåëüçÿ!" << endl << endl;
+		cout << "На ноль делить нельзя!" << endl << endl;
 	}
 	else
 	{
