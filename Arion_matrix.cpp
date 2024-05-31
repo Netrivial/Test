@@ -12,7 +12,7 @@ void SumMatrix(Matrix_x& matrix_main, Matrix_x help_matrix)
 
 	if (matrix_main.size_x != help_matrix.size_x)
 	{
-		cout << "Ó âåêòîðîâ ðàçíûé ðàçìåð!" << endl << endl;
+		cout << "Векторы разных размеров!" << endl << endl;
 		return;
 	}
 
